@@ -9,6 +9,8 @@ This gives 2 deployment options:
 ## Initial Setup:
 This repo currently contains the starter files.
 
+
+==============IN THE FIRST SETUP==============
 Clone repo and create a virtual environment
 ```
 $ git clone https://github.com/python-engineer/chatbot-deployment.git
@@ -24,7 +26,7 @@ Install nltk package
 ```
 $ (venv) python
 >>> import nltk
->>> nltk.download('punkt')
+>>> nltk.download('punkt') || nltk.download('punkt_tab')
 ```
 Modify `intents.json` with different intents and responses for your Chatbot
 
@@ -35,18 +37,17 @@ $ (venv) python train.py
 This will dump data.pth file. And then run
 the following command to test it in the console.
 ```
-$ (venv) python chat.py
+$ pip freeze > requirements.txt
+set up requirement to run faster in the second time run app.py
 ```
+$ (venv) python app.py 
+for test on postman
+```
+$ (venv) python chat.py
+test in terminal
+```
+=========IN THE SECOND TIME TO RUN========
 
-Now for deployment follow my tutorial to implement `app.py` and `app.js`.
+$ pip install -r requirements.txt
 
-## Watch the Tutorial
-[![Alt text](https://img.youtube.com/vi/a37BL0stIuM/hqdefault.jpg)](https://youtu.be/a37BL0stIuM)  
-[https://youtu.be/a37BL0stIuM](https://youtu.be/a37BL0stIuM)
 
-## Note
-In the video we implement the first approach using jinja2 templates within our Flask app. Only slight modifications are needed to run the frontend separately. I put the final frontend code for a standalone frontend application in the [standalone-frontend](/standalone-frontend) folder.
-
-## Credits:
-This repo was used for the frontend code:
-https://github.com/hitchcliff/front-end-chatjs
