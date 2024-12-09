@@ -48,7 +48,7 @@ $ (venv) python chat.py
 test in terminal
 ```
 =========IN THE SECOND TIME TO RUN========
-
+-
 $ pip install -r requirements.txt
 
 
