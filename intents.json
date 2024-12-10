@@ -3,18 +3,13 @@
     {
       "tag": "greeting",
       "patterns": [
-        "Hi",
-        "Hey",
-        "How are you",
-        "Is anyone there?",
-        "Hello",
-        "Good day"
+        "chào",
+        "hi",
+        "xin chào"
       ],
       "responses": [
-        "Hey :-)",
-        "Hello, thanks for visiting",
-        "Hi there, what can I do for you?",
-        "Hi there, how can I help?"
+        "Xin chào, cảm ơn bạn đã ghé thăm!",
+        "Hi, tôi có thể giúp gì cho bạn?"
       ]
     },
     {

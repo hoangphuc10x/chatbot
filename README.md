@@ -28,12 +28,18 @@ Install nltk package
 $ (venv) python
 >>> import nltk
 >>> nltk.download('punkt') || nltk.download('punkt_tab')
+>>> quit()
 ```
 Modify `intents.json` with different intents and responses for your Chatbot
 
 Run
 ```
 $ (venv) python train.py
+
+$ pip install underthesea
+
+$ (venv) python app.py
+
 ```
 This will dump data.pth file. And then run
 the following command to test it in the console.
@@ -41,6 +47,7 @@ the following command to test it in the console.
 $ pip freeze > requirements.txt
 set up requirement to run faster in the second time run app.py
 ```
+
 $ (venv) python app.py 
 for test on postman
 ```

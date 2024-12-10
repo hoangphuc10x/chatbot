@@ -4,14 +4,13 @@ import nltk
 from nltk.stem.porter import PorterStemmer
 stemmer = PorterStemmer()
 
+from underthesea import word_tokenize
 
 def tokenize(sentence):
     """
-    split sentence into array of words/tokens
-    a token can be a word or punctuation character, or number
+    Tách câu thành các từ trong tiếng Việt
     """
-    return nltk.word_tokenize(sentence)
-
+    return word_tokenize(sentence)
 
 def stem(word):
     """
