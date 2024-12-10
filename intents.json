@@ -23,8 +23,8 @@
     },
     {
       "tag": "thanks",
-      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
-      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+      "patterns": ["Cám ơn", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!","không có gì cả", "Any time!", "My pleasure"]
     },
     {
       "tag": "items",

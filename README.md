@@ -21,7 +21,10 @@ $ . venv/bin/activate ||    ./venv/Scripts/activate
 ```
 Install dependencies
 ```
+$ pip install underthesea
+
 $ (venv) pip install Flask torch torchvision nltk
+
 ```
 Install nltk package
 ```
@@ -36,7 +39,6 @@ Run
 ```
 $ (venv) python train.py
 
-$ pip install underthesea
 
 $ (venv) python app.py
 
