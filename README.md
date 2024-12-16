@@ -22,7 +22,7 @@ $ . venv/bin/activate ||    ./venv/Scripts/activate
 Install dependencies
 ```
 $ pip install underthesea
-
+$ pip install flask-cors
 $ (venv) pip install Flask torch torchvision nltk
 
 ```
