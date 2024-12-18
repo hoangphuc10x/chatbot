@@ -3,77 +3,372 @@
     {
       "tag": "greeting",
       "patterns": [
-        "chào",
-        "hi",
-        "xin chào"
+        "Xin chào",
+        "Hi",
+        "Hello",
+        "Chào bạn",
+        "Chào anh/chị",
+        "Chào em",
+        "Good morning",
+        "Chào buổi sáng"
       ],
       "responses": [
-        "Xin chào, cảm ơn bạn đã ghé thăm!",
-        "Hi, tôi có thể giúp gì cho bạn?"
+        "Xin chào! Bạn là học sinh hay sinh viên?",
+        "Hi! Bạn học ngành gì vậy?",
+        "Chào bạn! Bạn có ước mơ nghề nghiệp gì cho tương lai không?",
+        "Xin chào! Bạn có thể cho tôi biết bạn học ngành gì không?"
       ]
     },
     {
-      "tag": "goodbye",
-      "patterns": ["Bye", "See you later", "Goodbye"],
+      "tag": "student_or_pupil",
+      "patterns": [
+        "Tôi là học sinh",
+        "Tôi là sinh viên",
+        "Học sinh",
+        "Sinh viên",
+        "Tôi đang học cấp 3",
+        "Tôi học đại học",
+        "Tôi là sinh viên năm 2"
+      ],
       "responses": [
-        "See you later, thanks for visiting",
-        "Have a nice day",
-        "Bye! Come back again soon."
+        "Bạn học ngành gì vậy? Bạn có thể chia sẻ về ngành học của mình không?",
+        "Sinh viên à? Bạn học ngành gì thế?",
+        "Bạn có ước mơ nghề nghiệp gì trong tương lai không?",
+        "Học sinh hay sinh viên, bạn đang học ngành nào?"
+      ]
+    },
+    {
+      "tag": "major_information_IT",
+      "patterns": [
+        "Tôi học ngành công nghệ thông tin",
+        "Tôi học ngành IT",
+        "Tôi học ngành công nghệ thông tin và truyền thông"
+      ],
+      "responses": [
+        "Ngành Công nghệ thông tin là một lĩnh vực rất tiềm năng! Bạn có dự định làm công việc gì trong ngành này?",
+        "Ngành Công nghệ thông tin thật tuyệt vời! Bạn có ước mơ nghề nghiệp gì trong ngành này không?",
+        "Ngành Công nghệ thông tin rất phát triển hiện nay, bạn có thể chia sẻ thêm về ước mơ nghề nghiệp của mình không?",
+        "Công nghệ thông tin là ngành đang phát triển mạnh. Bạn muốn làm công việc gì trong tương lai?"
+      ]
+    },
+    {
+      "tag": "major_information_medicine",
+      "patterns": [
+        "Tôi học ngành y",
+        "Tôi học y khoa",
+        "Tôi học ngành y tế"
+      ],
+      "responses": [
+        "Ngành Y là một ngành quan trọng và có tầm ảnh hưởng lớn! Bạn muốn làm công việc gì trong ngành Y?",
+        "Ngành Y khoa rất có tiềm năng trong tương lai. Bạn có ước mơ gì trong nghề này không?",
+        "Y khoa là một ngành yêu cầu sự cống hiến lớn. Bạn có thể chia sẻ về sự nghiệp bạn mong muốn trong ngành này không?"
+      ]
+    },
+    {
+      "tag": "major_information_economics",
+      "patterns": [
+        "Tôi học ngành kinh tế",
+        "Tôi học kinh tế",
+        "Tôi học ngành tài chính"
+      ],
+      "responses": [
+        "Ngành Kinh tế rất đa dạng và phát triển! Bạn có kế hoạch nghề nghiệp nào trong lĩnh vực này?",
+        "Kinh tế là ngành quan trọng trong xã hội. Bạn có ước mơ nghề nghiệp gì trong ngành này không?",
+        "Ngành Kinh tế hiện nay rất phát triển. Bạn muốn làm công việc gì trong lĩnh vực này?"
+      ]
+    },
+    {
+      "tag": "major_information_education",
+      "patterns": [
+        "Tôi học ngành giáo dục",
+        "Tôi học sư phạm",
+        "Tôi học ngành giảng dạy"
+      ],
+      "responses": [
+        "Ngành Giáo dục là ngành mang tính nhân văn cao! Bạn muốn làm công việc gì trong ngành này?",
+        "Ngành Sư phạm có tầm quan trọng lớn trong xã hội. Bạn có ước mơ gì trong ngành Giáo dục không?",
+        "Giáo dục là một ngành có nhiều cơ hội phát triển. Bạn có thể chia sẻ về nghề nghiệp bạn mong muốn không?"
+      ]
+    },
+    {
+      "tag": "major_information_law",
+      "patterns": [
+        "Tôi học ngành luật",
+        "Tôi học ngành pháp luật",
+        "Tôi học luật"
+      ],
+      "responses": [
+        "Ngành Luật rất thú vị và có tầm quan trọng lớn trong xã hội. Bạn muốn làm công việc gì trong ngành này?",
+        "Luật là ngành có ảnh hưởng sâu rộng đến xã hội. Bạn có ước mơ nghề nghiệp gì trong ngành Luật không?",
+        "Ngành Luật là một nghề đòi hỏi sự cẩn trọng. Bạn có thể chia sẻ về công việc bạn muốn làm trong ngành này?"
+      ]
+    },
+    {
+      "tag": "major_information_graphic_design",
+      "patterns": [
+        "Tôi học ngành thiết kế đồ họa",
+        "Tôi học thiết kế đồ họa",
+        "Tôi học đồ họa"
+      ],
+      "responses": [
+        "Ngành Thiết kế đồ họa rất sáng tạo và đầy thú vị! Bạn có dự định nghề nghiệp nào trong ngành này?",
+        "Thiết kế đồ họa là ngành đang phát triển mạnh. Bạn có ước mơ nghề nghiệp gì trong ngành này không?",
+        "Ngành Thiết kế đồ họa là một ngành đòi hỏi sự sáng tạo cao. Bạn muốn làm công việc gì trong tương lai?"
+      ]
+    },
+    {
+      "tag": "major_information_marketing",
+      "patterns": [
+        "Tôi học ngành marketing",
+        "Tôi học marketing",
+        "Tôi học ngành quảng cáo"
+      ],
+      "responses": [
+        "Ngành Marketing rất năng động và phát triển nhanh chóng. Bạn có dự định công việc gì trong ngành này?",
+        "Marketing là ngành thu hút rất nhiều cơ hội. Bạn có ước mơ nghề nghiệp gì trong lĩnh vực này không?",
+        "Ngành Marketing hiện nay rất có triển vọng. Bạn muốn làm công việc gì trong tương lai?"
+      ]
+    },
+    {
+      "tag": "major_information_construction",
+      "patterns": [
+        "Tôi học ngành xây dựng",
+        "Tôi học xây dựng",
+        "Tôi học kỹ sư xây dựng"
+      ],
+      "responses": [
+        "Ngành Xây dựng là một ngành quan trọng trong sự phát triển cơ sở hạ tầng. Bạn muốn làm công việc gì trong ngành này?",
+        "Xây dựng là một ngành rất cần thiết trong xã hội. Bạn có ước mơ nghề nghiệp gì trong ngành Xây dựng không?",
+        "Ngành Xây dựng hiện nay rất phát triển. Bạn muốn làm công việc gì trong ngành này?"
+      ]
+    },
+    {
+      "tag": "future_goal_doctor",
+      "patterns": [
+        "Tôi muốn trở thành bác sĩ",
+        "Tôi muốn làm bác sĩ",
+        "Tôi muốn trở thành y tá"
+      ],
+      "responses": [
+        "Thật tuyệt vời! Chúc bạn sớm đạt được ước mơ trở thành bác sĩ trong tương lai.",
+        "Bạn muốn trở thành một bác sĩ đúng không? Chắc chắn bạn sẽ thành công với ước mơ đó!",
+        "Đó là một ước mơ lớn! Hy vọng bạn sẽ trở thành một bác sĩ trong tương lai.",
+        "Chúc bạn thành công với ước mơ trở thành bác sĩ. Bạn có kế hoạch gì cụ thể để đạt được mục tiêu đó không?"
+      ]
+    },
+    {
+      "tag": "future_goal_software_engineer",
+      "patterns": [
+        "Tôi muốn làm kỹ sư phần mềm",
+        "Tôi muốn trở thành kỹ sư phần mềm",
+        "Tôi muốn làm lập trình viên"
+      ],
+      "responses": [
+        "Thật tuyệt vời! Chúc bạn sớm đạt được ước mơ trở thành kỹ sư phần mềm trong tương lai.",
+        "Bạn muốn trở thành một kỹ sư phần mềm đúng không? Chắc chắn bạn sẽ thành công với ước mơ đó!",
+        "Đó là một ước mơ lớn! Hy vọng bạn sẽ trở thành một kỹ sư phần mềm trong tương lai.",
+        "Chúc bạn thành công với ước mơ trở thành kỹ sư phần mềm. Bạn có kế hoạch gì cụ thể để đạt được mục tiêu đó không?"
+      ]
+    },
+    {
+      "tag": "future_goal_entrepreneur",
+      "patterns": [
+        "Tôi muốn mở công ty riêng",
+        "Tôi muốn trở thành doanh nhân",
+        "Tôi muốn làm chủ công ty"
+      ],
+      "responses": [
+        "Thật tuyệt vời! Chúc bạn sớm đạt được ước mơ mở công ty riêng trong tương lai.",
+        "Bạn muốn trở thành một doanh nhân đúng không? Chắc chắn bạn sẽ thành công với ước mơ đó!",
+        "Đó là một ước mơ lớn! Hy vọng bạn sẽ trở thành một doanh nhân trong tương lai.",
+        "Chúc bạn thành công với ước mơ trở thành doanh nhân. Bạn có kế hoạch gì cụ thể để đạt được mục tiêu đó không?"
+      ]
+    },
+    {
+      "tag": "future_goal_teacher",
+      "patterns": [
+        "Tôi muốn làm giáo viên",
+        "Tôi muốn trở thành giáo viên",
+        "Tôi muốn dạy học"
+      ],
+      "responses": [
+        "Thật tuyệt vời! Chúc bạn sớm đạt được ước mơ trở thành giáo viên trong tương lai.",
+        "Bạn muốn trở thành một giáo viên đúng không? Chắc chắn bạn sẽ thành công với ước mơ đó!",
+        "Đó là một ước mơ lớn! Hy vọng bạn sẽ trở thành một giáo viên trong tương lai.",
+        "Chúc bạn thành công với ước mơ trở thành giáo viên. Bạn có kế hoạch gì cụ thể để đạt được mục tiêu đó không?"
+      ]
+    },
+    {
+      "tag": "future_goal_ceo",
+      "patterns": [
+        "Tôi muốn trở thành giám đốc",
+        "Tôi muốn làm giám đốc",
+        "Tôi muốn trở thành CEO"
+      ],
+      "responses": [
+        "Thật tuyệt vời! Chúc bạn sớm đạt được ước mơ trở thành giám đốc trong tương lai.",
+        "Bạn muốn trở thành một giám đốc đúng không? Chắc chắn bạn sẽ thành công với ước mơ đó!",
+        "Đó là một ước mơ lớn! Hy vọng bạn sẽ trở thành một giám đốc trong tương lai.",
+        "Chúc bạn thành công với ước mơ trở thành giám đốc. Bạn có kế hoạch gì cụ thể để đạt được mục tiêu đó không?"
+      ]
+    },
+    {
+      "tag": "future_goal_researcher",
+      "patterns": [
+        "Tôi muốn làm nghiên cứu sinh",
+        "Tôi muốn trở thành nhà nghiên cứu",
+        "Tôi muốn làm nghiên cứu"
+      ],
+      "responses": [
+        "Thật tuyệt vời! Chúc bạn sớm đạt được ước mơ trở thành nhà nghiên cứu trong tương lai.",
+        "Bạn muốn trở thành một nhà nghiên cứu đúng không? Chắc chắn bạn sẽ thành công với ước mơ đó!",
+        "Đó là một ước mơ lớn! Hy vọng bạn sẽ trở thành một nhà nghiên cứu trong tương lai.",
+        "Chúc bạn thành công với ước mơ trở thành nhà nghiên cứu. Bạn có kế hoạch gì cụ thể để đạt được mục tiêu đó không?"
+      ]
+    },
+    {
+      "tag": "future_goal_designer",
+      "patterns": [
+        "Tôi muốn làm nhà thiết kế",
+        "Tôi muốn trở thành nhà thiết kế",
+        "Tôi muốn làm designer"
+      ],
+      "responses": [
+        "Thật tuyệt vời! Chúc bạn sớm đạt được ước mơ trở thành nhà thiết kế trong tương lai.",
+        "Bạn muốn trở thành một nhà thiết kế đúng không? Chắc chắn bạn sẽ thành công với ước mơ đó!",
+        "Đó là một ước mơ lớn! Hy vọng bạn sẽ trở thành một nhà thiết kế trong tương lai.",
+        "Chúc bạn thành công với ước mơ trở thành nhà thiết kế. Bạn có kế hoạch gì cụ thể để đạt được mục tiêu đó không?"
+      ]
+    },
+    {
+      "tag": "uncertain_about_career",
+      "patterns": [
+        "Tôi không biết mình nên làm nghề gì",
+        "Tôi không chắc chắn về nghề nghiệp tương lai",
+        "Tôi đang phân vân không biết nên chọn nghề gì"
+      ],
+      "responses": [
+        "Không sao đâu! Bạn có thể khám phá nhiều lĩnh vực khác nhau để tìm ra đam mê của mình.",
+        "Đừng lo lắng, việc tìm ra nghề nghiệp phù hợp là một quá trình. Hãy thử tìm hiểu thêm về các lĩnh vực bạn thấy thú vị.",
+        "Nếu bạn chưa biết chọn nghề, tôi có thể gợi ý một số lựa chọn nghề nghiệp cho bạn. Bạn có thể thích làm việc trong lĩnh vực sáng tạo, công nghệ, hay kinh tế?"
+      ]
+    }
+    ,
+    {
+      "tag": "motivation",
+      "patterns": [
+        "Tôi cảm thấy mất động lực",
+        "Tôi không có năng lượng để học",
+        "Tôi đang cảm thấy mệt mỏi",
+        "Tôi cảm thấy không có động lực để tiếp tục",
+        "Tôi đang gặp khó khăn trong việc học"
+      ],
+      "responses": [
+        "Đừng lo, mọi người đều có những lúc khó khăn. Hãy cố gắng tiếp tục, bạn sẽ vượt qua được.",
+        "Chắc chắn bạn sẽ vượt qua được khó khăn này. Hãy giữ vững niềm tin và tiếp tục cố gắng!",
+        "Đôi khi nghỉ ngơi và làm mới bản thân cũng rất quan trọng. Sau đó, bạn sẽ thấy năng lượng trở lại.",
+        "Hãy tìm những điều làm bạn đam mê và tiếp tục theo đuổi mục tiêu của mình. Bạn làm được!"
+      ]
+    },
+    {
+      "tag": "unknown",
+      "patterns": [
+        "Tôi không biết",
+        "Không có ý tưởng gì cả",
+        "Chưa nghĩ đến",
+        "Chưa biết",
+        "Không chắc chắn"
+      ],
+      "responses": [
+        "Không sao đâu! Bạn có thể thử khám phá các lĩnh vực mới. Tôi luôn ở đây để gợi ý cho bạn.",
+        "Nếu bạn chưa biết, tôi có thể giúp bạn tìm một nghề phù hợp với sở thích của bạn.",
+        "Chắc chắn bạn sẽ tìm ra được điều mình yêu thích. Hãy thử tìm hiểu thêm về các ngành nghề khác nhau."
       ]
     },
     {
       "tag": "thanks",
-      "patterns": ["Cám ơn", "Thank you", "That's helpful", "Thank's a lot!"],
-      "responses": ["Happy to help!","không có gì cả", "Any time!", "My pleasure"]
-    },
-    {
-      "tag": "items",
       "patterns": [
-        "Which items do you have?",
-        "What kinds of items are there?",
-        "What do you sell?"
+        "Cảm ơn",
+        "Thank you",
+        "Cảm ơn bạn",
+        "Cảm ơn rất nhiều"
       ],
       "responses": [
-        "We sell coffee and tea",
-        "We have coffee and tea"
+        "Rất vui được giúp bạn!",
+        "Không có gì đâu, chúc bạn một ngày tốt lành!",
+        "Chúc bạn thành công với những ước mơ của mình!"
       ]
     },
     {
-      "tag": "payments",
+      "tag": "preferences_and_major",
       "patterns": [
-        "Do you take credit cards?",
-        "Do you accept Mastercard?",
-        "Can I pay with Paypal?",
-        "Are you cash only?"
+        "Tôi chưa biết mình thích gì",
+        "Tôi không biết chọn ngành học nào"
       ],
       "responses": [
-        "We accept VISA, Mastercard and Paypal",
-        "We accept most major credit cards, and Paypal"
+        "Hãy thử suy nghĩ về những điều bạn yêu thích. Bạn thích làm việc với con người, máy tính, hay sáng tạo?",
+        "Có thể bạn muốn làm việc trong lĩnh vực sáng tạo như thiết kế, hoặc trong khoa học như y học, công nghệ thông tin.",
+        "Chọn ngành học không chỉ dựa trên sở thích mà còn dựa vào khả năng của bạn. Hãy thử khám phá một vài ngành học xem sao."
       ]
     },
     {
-      "tag": "delivery",
+      "tag": "preferences_and_major",
       "patterns": [
-        "How long does delivery take?",
-        "How long does shipping take?",
-        "When do I get my delivery?"
+        "Tôi chưa biết mình thích gì",
+        "Tôi không biết chọn ngành học nào"
       ],
       "responses": [
-        "Delivery takes 2-4 days",
-        "Shipping takes 2-4 days"
+        "Hãy thử suy nghĩ về những điều bạn yêu thích. Bạn thích làm việc với con người, máy tính, hay sáng tạo?",
+        "Có thể bạn muốn làm việc trong lĩnh vực sáng tạo như thiết kế, hoặc trong khoa học như y học, công nghệ thông tin.",
+        "Chọn ngành học không chỉ dựa trên sở thích mà còn dựa vào khả năng của bạn. Hãy thử khám phá một vài ngành học xem sao."
       ]
     },
     {
-      "tag": "funny",
+      "tag": "career_advice_specific",
       "patterns": [
-        "Tell me a joke!",
-        "Tell me something funny!",
-        "Do you know a joke?"
+        "Bạn có thể tư vấn cho tôi nghề nghiệp nào không?"
       ],
       "responses": [
-        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
-        "What did the buffalo say when his son left for college? Bison."
+        "Tùy vào sở thích của bạn, bạn có thể lựa chọn giữa các ngành như khoa học máy tính, y học, hoặc thiết kế đồ họa.",
+        "Hãy thử tham khảo một số ngành nghề như công nghệ thông tin, marketing, hoặc tài chính. Chắc chắn sẽ có ngành phù hợp với bạn.",
+        "Nếu bạn chưa biết, tôi có thể giúp bạn khám phá một số nghề nghiệp dựa trên sở thích của bạn. Bạn có thể thử xem các ngành nghề liên quan đến sáng tạo hoặc nghiên cứu."
+      ]
+    },
+    {
+      "tag": "career_goal_determination",
+      "patterns": [
+        "Tôi không biết nên bắt đầu từ đâu",
+        "Tôi không biết mục tiêu nghề nghiệp của mình là gì"
+      ],
+      "responses": [
+        "Có thể bạn muốn làm việc trong lĩnh vực sáng tạo như thiết kế, hoặc trong các ngành nghiên cứu như y học, khoa học máy tính.",
+        "Hãy thử tìm hiểu về các ngành nghề yêu thích của bạn và xác định rõ mục tiêu nghề nghiệp để đưa ra kế hoạch học tập và làm việc phù hợp.",
+        "Bạn có thể bắt đầu từ việc xác định mình thích làm gì, sau đó tìm các nghề nghiệp phù hợp với sở thích đó."
+      ]
+    },
+    {
+      "tag": "career_exploration",
+      "patterns": [
+        "Tôi muốn biết thêm về các nghề nghiệp có thể phù hợp với tôi"
+      ],
+      "responses": [
+        "Bạn có thể khám phá nhiều ngành nghề khác nhau như công nghệ, marketing, hoặc tài chính để tìm ra ngành phù hợp với sở thích của mình.",
+        "Hãy thử tìm hiểu về các nghề nghiệp trong lĩnh vực sáng tạo, như thiết kế đồ họa, hoặc nghiên cứu, như y học hoặc khoa học máy tính.",
+        "Khám phá nghề nghiệp là một quá trình dài. Bạn có thể thử tham gia các khóa học để tìm ra sở thích và đam mê thực sự của mình."
+      ]
+    },
+    {
+      "tag": "popular_career_fields",
+      "patterns": [
+        "Ngành nghề nào đang phát triển hiện nay?",
+        "Các ngành nghề nào đang có nhu cầu cao?"
+      ],
+      "responses": [
+        "Các ngành công nghệ thông tin, tài chính, và marketing đang phát triển rất mạnh mẽ hiện nay.",
+        "Các lĩnh vực như khoa học dữ liệu, trí tuệ nhân tạo, y học, và thiết kế đồ họa đang có nhu cầu lớn về nhân lực.",
+        "Hiện nay, ngành công nghệ thông tin, đặc biệt là lập trình viên, đang được yêu cầu rất nhiều, bạn có thể xem xét lựa chọn trong lĩnh vực này."
       ]
     }
+    
   ]
 }
