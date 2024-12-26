@@ -22,13 +22,11 @@
     {
       "tag": "student_or_pupil",
       "patterns": [
-        "Tôi là học sinh",
-        "Tôi là sinh viên",
-        "Học sinh",
-        "Sinh viên",
-        "Tôi đang học cấp 3",
-        "Tôi học đại học",
-        "Tôi là sinh viên năm 2"
+        "học sinh",
+        "sinh viên",
+        "cấp 3",
+        "đại học",
+        "sinh viên năm 2","năm 1", "năm nhất"
       ],
       "responses": [
         "Bạn học ngành gì vậy? Bạn có thể chia sẻ về ngành học của mình không?",
@@ -40,9 +38,10 @@
     {
       "tag": "major_information_IT",
       "patterns": [
-        "Tôi học ngành công nghệ thông tin",
-        "Tôi học ngành IT",
-        "Tôi học ngành công nghệ thông tin và truyền thông"
+        "công nghệ thông tin",
+        "IT",
+        "Tôi học ngành công nghệ thông tin và truyền thông",
+        "cntt"
       ],
       "responses": [
         "Ngành Công nghệ thông tin là một lĩnh vực rất tiềm năng! Bạn có dự định làm công việc gì trong ngành này?",
@@ -54,7 +53,7 @@
     {
       "tag": "major_information_medicine",
       "patterns": [
-        "Tôi học ngành y",
+        "y",
         "Tôi học y khoa",
         "Tôi học ngành y tế"
       ],
@@ -67,9 +66,8 @@
     {
       "tag": "major_information_economics",
       "patterns": [
-        "Tôi học ngành kinh tế",
-        "Tôi học kinh tế",
-        "Tôi học ngành tài chính"
+        "kinh tế",
+        "tài chính"
       ],
       "responses": [
         "Ngành Kinh tế rất đa dạng và phát triển! Bạn có kế hoạch nghề nghiệp nào trong lĩnh vực này?",
@@ -80,9 +78,9 @@
     {
       "tag": "major_information_education",
       "patterns": [
-        "Tôi học ngành giáo dục",
-        "Tôi học sư phạm",
-        "Tôi học ngành giảng dạy"
+        " giáo dục",
+        "sư phạm",
+        "giảng dạy"
       ],
       "responses": [
         "Ngành Giáo dục là ngành mang tính nhân văn cao! Bạn muốn làm công việc gì trong ngành này?",
@@ -93,9 +91,7 @@
     {
       "tag": "major_information_law",
       "patterns": [
-        "Tôi học ngành luật",
-        "Tôi học ngành pháp luật",
-        "Tôi học luật"
+        "luật"
       ],
       "responses": [
         "Ngành Luật rất thú vị và có tầm quan trọng lớn trong xã hội. Bạn muốn làm công việc gì trong ngành này?",
@@ -106,9 +102,9 @@
     {
       "tag": "major_information_graphic_design",
       "patterns": [
-        "Tôi học ngành thiết kế đồ họa",
-        "Tôi học thiết kế đồ họa",
-        "Tôi học đồ họa"
+
+        "thiết kế đồ họa",
+        "đồ họa"
       ],
       "responses": [
         "Ngành Thiết kế đồ họa rất sáng tạo và đầy thú vị! Bạn có dự định nghề nghiệp nào trong ngành này?",
@@ -119,9 +115,8 @@
     {
       "tag": "major_information_marketing",
       "patterns": [
-        "Tôi học ngành marketing",
-        "Tôi học marketing",
-        "Tôi học ngành quảng cáo"
+        "marketing",
+        "quảng cáo"
       ],
       "responses": [
         "Ngành Marketing rất năng động và phát triển nhanh chóng. Bạn có dự định công việc gì trong ngành này?",
@@ -132,9 +127,8 @@
     {
       "tag": "major_information_construction",
       "patterns": [
-        "Tôi học ngành xây dựng",
-        "Tôi học xây dựng",
-        "Tôi học kỹ sư xây dựng"
+        "xây dựng",
+        "kỹ sư ", "xd"
       ],
       "responses": [
         "Ngành Xây dựng là một ngành quan trọng trong sự phát triển cơ sở hạ tầng. Bạn muốn làm công việc gì trong ngành này?",
@@ -145,9 +139,8 @@
     {
       "tag": "future_goal_doctor",
       "patterns": [
-        "Tôi muốn trở thành bác sĩ",
-        "Tôi muốn làm bác sĩ",
-        "Tôi muốn trở thành y tá"
+        "bác sĩ",
+        "y tá"
       ],
       "responses": [
         "Thật tuyệt vời! Chúc bạn sớm đạt được ước mơ trở thành bác sĩ trong tương lai.",
@@ -159,23 +152,29 @@
     {
       "tag": "future_goal_software_engineer",
       "patterns": [
-        "Tôi muốn làm kỹ sư phần mềm",
-        "Tôi muốn trở thành kỹ sư phần mềm",
-        "Tôi muốn làm lập trình viên"
+        "kỹ sư phần mềm","pm",
+        "lập trình viên"
       ],
       "responses": [
-        "Thật tuyệt vời! Chúc bạn sớm đạt được ước mơ trở thành kỹ sư phần mềm trong tương lai.",
-        "Bạn muốn trở thành một kỹ sư phần mềm đúng không? Chắc chắn bạn sẽ thành công với ước mơ đó!",
-        "Đó là một ước mơ lớn! Hy vọng bạn sẽ trở thành một kỹ sư phần mềm trong tương lai.",
-        "Chúc bạn thành công với ước mơ trở thành kỹ sư phần mềm. Bạn có kế hoạch gì cụ thể để đạt được mục tiêu đó không?"
+        "Chúng tôi có khóa Kỹ thuật Robot và tự động hóa, Robot trong sản xuất và dây chuyền lắp ráp, Kỹ thuật điều khiển robot, Ứng dụng AI trong robot công nghiệp, Phân tích dữ liệu trong robot công nghiệp! không biết bạn có hứng thứ với khóa học nào của chúng tôi không?"
+      ]
+    },
+    {
+      "tag":"RoBo_Auto",
+      "patterns":[
+        "Robot và tự động hóa"
+      ],
+      "responses":[
+        "Khoá học: Kỹ thuật Robot và tự động hóa \nMô tả: Khám phá kỹ thuật robot và tự động hóa\n giá: 8000000VNĐ\n Thời lượng: 50 Giờ"
       ]
     },
     {
       "tag": "future_goal_entrepreneur",
       "patterns": [
         "Tôi muốn mở công ty riêng",
-        "Tôi muốn trở thành doanh nhân",
-        "Tôi muốn làm chủ công ty"
+        "công ty",
+        "doanh nhân",
+        "chủ công ty"
       ],
       "responses": [
         "Thật tuyệt vời! Chúc bạn sớm đạt được ước mơ mở công ty riêng trong tương lai.",
@@ -187,8 +186,8 @@
     {
       "tag": "future_goal_teacher",
       "patterns": [
-        "Tôi muốn làm giáo viên",
-        "Tôi muốn trở thành giáo viên",
+        "giáo viên",
+        "giảng viên",
         "Tôi muốn dạy học"
       ],
       "responses": [
@@ -201,9 +200,8 @@
     {
       "tag": "future_goal_ceo",
       "patterns": [
-        "Tôi muốn trở thành giám đốc",
-        "Tôi muốn làm giám đốc",
-        "Tôi muốn trở thành CEO"
+        "giám đốc",
+        "CEO"
       ],
       "responses": [
         "Thật tuyệt vời! Chúc bạn sớm đạt được ước mơ trở thành giám đốc trong tương lai.",
@@ -215,9 +213,9 @@
     {
       "tag": "future_goal_researcher",
       "patterns": [
-        "Tôi muốn làm nghiên cứu sinh",
-        "Tôi muốn trở thành nhà nghiên cứu",
-        "Tôi muốn làm nghiên cứu"
+        "nghiên cứu sinh",
+        "nhà nghiên cứu",
+        "nghiên cứu"
       ],
       "responses": [
         "Thật tuyệt vời! Chúc bạn sớm đạt được ước mơ trở thành nhà nghiên cứu trong tương lai.",
@@ -229,9 +227,9 @@
     {
       "tag": "future_goal_designer",
       "patterns": [
-        "Tôi muốn làm nhà thiết kế",
-        "Tôi muốn trở thành nhà thiết kế",
-        "Tôi muốn làm designer"
+        "nhà thiết kế",
+        "thiết kế",
+        "designer"
       ],
       "responses": [
         "Thật tuyệt vời! Chúc bạn sớm đạt được ước mơ trở thành nhà thiết kế trong tương lai.",
@@ -245,7 +243,8 @@
       "patterns": [
         "Tôi không biết mình nên làm nghề gì",
         "Tôi không chắc chắn về nghề nghiệp tương lai",
-        "Tôi đang phân vân không biết nên chọn nghề gì"
+        "Tôi đang phân vân không biết nên chọn nghề gì",
+        "Tôi không biết"
       ],
       "responses": [
         "Không sao đâu! Bạn có thể khám phá nhiều lĩnh vực khác nhau để tìm ra đam mê của mình.",
@@ -257,11 +256,11 @@
     {
       "tag": "motivation",
       "patterns": [
-        "Tôi cảm thấy mất động lực",
-        "Tôi không có năng lượng để học",
-        "Tôi đang cảm thấy mệt mỏi",
-        "Tôi cảm thấy không có động lực để tiếp tục",
-        "Tôi đang gặp khó khăn trong việc học"
+        "cảm thấy mất động lực",
+        "không có năng lượng để học",
+        "đang cảm thấy mệt mỏi","mệt mỏi",
+        "cảm thấy không có động lực để tiếp tục","không có động lực",
+        "đang gặp khó khăn trong việc học","khó khăn"
       ],
       "responses": [
         "Đừng lo, mọi người đều có những lúc khó khăn. Hãy cố gắng tiếp tục, bạn sẽ vượt qua được.",
